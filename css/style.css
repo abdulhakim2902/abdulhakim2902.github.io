@@ -75,7 +75,7 @@ header {
 	display: inline-block;
 	margin-left: 15px;
 	padding: 0 10px;
-	transition: all 1s;
+	transition: 1s;
 }
 
 .navbar:hover {
@@ -84,8 +84,20 @@ header {
 	color: black;
 }
 
-p {
-	margin-top: 10px;
+header span.menu-icon {
+    color: white;
+    float: right;
+    font-size: 25px;
+	padding: 20px 20px;	
+	display: none;
+}
+
+.top-wrapper {
+	width: 100%;
+	height: 500px;
+	background-image: url('/img/bg.jpg');
+	background-size: cover;
+	background-color: red;
 }
 
 
