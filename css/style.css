@@ -74,7 +74,7 @@ header {
 	color: white;
 	text-decoration: none;
 	transition: 1s;
-	width: 80px;
+	width: 100px;
 	text-align: center;
 }
 
@@ -125,16 +125,46 @@ header span.menu-icon {
 	padding-bottom: 40px;
 }
 
+article {
+	width: 70%;
+	background-color: white;
+	padding: 20px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+	border-radius: 20px;
+}
+
 article h1 {
 	font-weight: bold;
-	font-size: 20px;
-	margin-bottom: 15px;
+	font-size: 35px;
+	margin-bottom: 30px;
 }
 
 article p {
 	font-size: 18px;
 	line-height: 30px;
-	width: 97%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+
+.content article .penulis p {
+	font-size: 15px;
+	line-height: 10px;
+}
+
+.content article .penulis p .nama-penulis {
+	text-decoration: none;
+	color: black;
+	opacity: 0.8;
+}
+
+.content article .penulis p .cal {
+	color: black;
+	opacity: 0.8;
+}
+
+.penulis {
+	margin-bottom: 25px;
 }
 
 footer {
