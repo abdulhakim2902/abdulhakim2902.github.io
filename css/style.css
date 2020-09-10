@@ -66,23 +66,24 @@ header {
 .header-right {
 	float: right;
 	line-height: 65px;
-	margin-right: 20px;
+	margin-right: 30px;
 }
 
 .navbar {
+	float: left;
 	color: white;
 	text-decoration: none;
-	display: inline-block;
-	margin-left: 15px;
-	padding: 0 10px;
 	transition: 1s;
+	width: 80px;
+	text-align: center;
 }
 
-.navbar:hover {
+.header-right a:hover {
 	background-color: white;
-	opacity: 0.8;
+	opacity: 0.5;
 	color: black;
 }
+
 
 header span.menu-icon {
     color: white;
@@ -121,6 +122,7 @@ header span.menu-icon {
 	background-color: rgb(236, 236, 236);
 	padding-top: 40px;
 	padding-left: 50px;
+	padding-bottom: 40px;
 }
 
 article h1 {
@@ -135,7 +137,46 @@ article p {
 	width: 97%;
 }
 
+footer {
+	width: 100%;
+	height: 50px;
+}
 
+.icon-wrapper {
+	float: left;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 50px;
+}
+
+.icon-wrapper p {
+	font-size: 15px;
+}
+
+.icon {
+	font-size: 30px;
+	opacity: 0.8;
+}
+
+.facebook {
+	color: #4267B2;
+}
+
+.instagram {
+	color: #C13584;
+
+}
+
+.twitter {
+	color: #1DA1F2;
+}
+
+.copyright {
+	float: right;
+	margin-top: 35px;
+	margin-bottom: 15px;
+	margin-right: 50px;
+}
 
 
 
