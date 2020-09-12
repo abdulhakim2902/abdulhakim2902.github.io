@@ -96,7 +96,7 @@ header span.menu-icon {
 .top-wrapper {
 	width: 100%;
 	height:100vh;
-	background-image: url(/My\ Blog/img/bg.jpg);
+	background-image: url(../img/bg.jpg);
 	background-size: cover;
 }
 
