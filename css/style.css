@@ -95,7 +95,7 @@ header span.menu-icon {
 
 .top-wrapper {
 	width: 100%;
-	height:100vh;
+	height: 95vh;
 	background-image: url(../img/bg.jpg);
 	background-size: cover;
 }
@@ -121,59 +121,8 @@ header span.menu-icon {
 	margin-top: 10px;
 }
 
-.content {
-	background-color: rgb(236, 236, 236);
-	padding-top: 40px;
-	padding-left: 50px;
-	padding-bottom: 40px;
-}
-
-article {
-	width: 70%;
-	background-color: white;
-	padding: 20px;
-	box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-	border-radius: 20px;
-}
-
-article h1 {
-	font-weight: bold;
-	font-size: 35px;
-	margin-bottom: 30px;
-}
-
-article p {
-	font-size: 18px;
-	line-height: 30px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-
-}
-
-.content article .penulis p {
-	font-size: 15px;
-	line-height: 10px;
-}
-
-.content article .penulis p .nama-penulis {
-	text-decoration: none;
-	color: black;
-	opacity: 0.8;
-}
-
-.content article .penulis p .cal {
-	color: black;
-	opacity: 0.8;
-}
-
-.icon-wrapper {
-	float: right;
-	margin-top: 190px;
-	margin-bottom: 15px;
-	margin-right: 50px;
-}
-
 .icon {
+	float: left;
 	font-size: 25px;
 	color: white;
 	text-decoration: none;
@@ -183,19 +132,6 @@ article p {
 	padding-top: 8px;
 	color:white;
 }
-
-.icon-wrapper .follow {
-	margin-bottom: 5px;
-	font-size: 17px;
-	color: white;
-	font-weight: bold;
-}
-
-
-
-
-
-
 
 .facebook {
 	color: #4267B2;
@@ -210,9 +146,7 @@ article p {
 	color: #1DA1F2;
 }
 
-
-
-
-
-
-
+footer {
+	background-color: black;
+	height: 5vh;
+}
