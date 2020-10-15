@@ -1,45 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive.css"> 
     <script src="https://kit.fontawesome.com/5694ef12b2.js" crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-    <header>
-        <div class="header-left">
-            <img src="img/logo.png" alt="AH" class="logo">
-        </div>
-        
-        <span class="fas fa-bars menu-icon"></span>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+            </div>
 
-        <div class="header-right">
-            <a class="navbar home" href="index.html">Home</a>
-            <a class="navbar archives" href="blog.html">Blog</a>
-            <a class="navbar portfolio" href="portfolio.html">Portfolio</a>
-            <a class="navbar about" href="about.html">About</a>
-        </div>
-    </header>
+            <nav class="header-right">
+                <a class="nav-list" href="index.html">Home</a>
+                <a class="nav-list" href="blog.html">Blog</a>
+                <a class="nav-list" href="portfolio.html">Portfolio</a>
+                <a class="nav-list" href="about.html">About</a>
+            </nav>
 
-    <div class="top-wrapper">
-        <div class="container">
-            <h1>Daily Blog | The Journey</h1>
-            <p>This is a story of a man who want to become a professional Full Stack Developer</p>
+            <div class=" header-right-menu">
+                <span id="menu-bar" class="fas fa-bars"></span>
+            </div>
+
+            <nav class="header-right-show">
+                <a href="index.html"><span class="fas fa-home nav-button"></span>Home</a>
+                <a href="blog.html"><span class="fas fa-book nav-button"></span>Blog</a>
+                <a href="portfolio.html"><span class="fas fa-briefcase nav-button"></span>Portfolio</a>
+                <a href="about.html"><span class="fas fa-user-friends nav-button"></span>About</a>
+            </nav>
+        </header>
+
+        <div class="top-container">
+            <h1>Daily Blog <span class="line">&#x7c</span> The Journey</h1>
+            <h2>A Journey to Become a Professional</h2>
+            <h2>FULL STACK DEVELOPER</h2>
+        </div>
+
+        <div class="content">
+            <div class="latest-article">
+                <h2>Latest Articles</h2>
+                <div class="section">
+                    <div class="nav-arrow">
+                        <span class="fas fa-angle-left"></span>
+                    </div>
+                    <a class="box one" href="">
+                        <figure>
+                            <img src="/img/img-article1.jpg" alt="">
+                        </figure>
+
+                        <div class="article-title">
+                            <h5><span>BLOG</span>
+                                My First Website</h5>
+                        </div>
+                    </a>
+                    <a class="box one" href="">
+                        <figure>
+                            <img src="/img/img-article1.jpg" alt="">
+                        </figure>
+
+                        <div class="article-title">
+                            <h5><span>PORTFOLIO</span>
+                                My First Website</h5>
+                        </div>
+                    </a>
+                    <a class="box one" href="">
+                        <figure>
+                            <img src="/img/img-article1.jpg" alt="">
+                        </figure>
+
+                        <div class="article-title">
+                            <h5><span>BLOG</span>
+                                My First Website</h5>
+                        </div>
+                    </a>
+                    <a class="box one" href="">
+                        <figure>
+                            <img src="/img/img-article1.jpg" alt="">
+                        </figure>
+
+                        <div class="article-title">
+                            <h5><span>PORTFOLIO</span>
+                                My First Website</h5>
+                        </div>
+                    </a>
+
+                    <div class="nav-arrow">
+                        <span class="fas fa-angle-right"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <div class="icon-wrapper">
-            <div class="icon">
-                <a href="https://facebook.com"><span class="fab fa-facebook-square facebook"></span></a>
-                <a href="https://twitter.com"><span class="fab fa-twitter-square twitter"></span></a>
-                <a href="https://instagra.com"><span class="fab fa-instagram-square instagram"></span></a>
-            </div>
-            <p class="copyright">&#169 AH 2020</p>
-        </div>
-    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

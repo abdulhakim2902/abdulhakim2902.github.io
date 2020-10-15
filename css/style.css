@@ -1,152 +1,289 @@
-/*CSS Reset*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
+html, body{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial;
+    text-transform: uppercase;
+    text-align: center;
 }
 
-/*Start Your Code From Here*/
-header {
-	width: 100%;
-	height: 65px;
-	background-color: rgba(34, 49, 52, 0.9);
-	color: white;
-	position: fixed;
-	top: 0;
-}
-
-.header-left {
-	float: left;
-}
-
-.logo {
-	width: 200px;
-	margin-top:-2px;
-}
-
-.header-right {
-	float: right;
-	line-height: 65px;
-	margin-right: 30px;
-}
-
-.navbar {
-	float: left;
-	color: white;
-	text-decoration: none;
-	transition: 1s;
-	width: 100px;
-	text-align: center;
-}
-
-.header-right a:hover {
-	background-color: white;
-	opacity: 0.5;
-	color: black;
+a {
+    text-decoration: none;
 }
 
 
-header span.menu-icon {
-    color: white;
-    float: right;
-    font-size: 25px;
-	padding: 20px 20px;	
-	display: none;
-}
-
-.top-wrapper {
-	width: 100%;
-	height: 95vh;
-	background-image: url(../img/bg.jpg);
-	background-size: cover;
-}
+/*....Your code start here.....*/
 
 .container {
-	padding-top: 230px;
-	padding-left: 50px;
-	color: white;
+    width: 100%;    
+    color: white;
 }
 
-.container h1 {
-	font-size: 60px;
-	font-weight: bold;
-	text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+/*Tag Header*/
+header {
+    background-color: rgba(34, 49, 52, 0.9);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 10;
+    box-shadow: rgba(25, 45, 100, 0.08) 0px 10px 30px 0px;
 }
 
-.container p {
-	font-size: 25px;
-	width: 650px;
-	text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
-	font-family: Arial;
-	line-height: 35px;
-	margin-top: 10px;
+
+/*Class header-left*/
+.header-left {
+    margin-left: 20px;
 }
 
-.icon {
-	float: left;
-	font-size: 25px;
-	color: white;
-	text-decoration: none;
+.header-left img {
+    width: 200px;
 }
 
-.copyright {
-	padding-top: 8px;
-	color:white;
+/*Class header-right*/
+.header-right {
+    margin-right: 20px;
 }
 
-.facebook {
-	color: #4267B2;
+.header-right a {
+    color: white;
+    display: inline-block;
+    padding: 25.5px 20px;
+    margin-right:-5px;
+    box-sizing: border-box;
+    width: 150px;
+    transition: background-color 200ms ease-in 50ms;
+    transition: color 300ms linear 20ms;
 }
 
-.instagram {
-	color: #C13584;
+.header-right a:hover{
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(34, 49, 52, 1);
+    font-weight: bolder;
+}
+
+.header-right-show a:hover {
+    background-color: rgba(255,255,255,0.5);
+    color: black;
+}
+
+
+.header-right-menu {
+    display: none;
+    font-size: 26px;
+    padding: 15.5px;
+    margin-right: 20px;
+}
+
+.header-right-menu:hover {
+    background-color: rgba(255,255,255,0.5);   
+    color: black;
+}
+
+.header-right-show {
+    display: none;
+}
+
+.nav-button {
+    margin-right: 14px;
+}
+
+/*Class of top-container*/
+.top-container {
+    background-image: url('../img/bg.jpg');
+    min-height: 460px;
+    background-size: cover;
+    position: absolute;
+    /*top: -160px;*/
+    width: 100%;
+    text-align: right;
+}
+
+.top-container h1, h2 {
+    opacity: 0.8;
+    margin-right: 100px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+.top-container h1 {
+    margin-top: 160px;
+}
+
+.top-container h2 {
+    text-transform: none;
+    margin-top: -15px;
+}
+
+.line {
+    position: relative;
+    top: -3px;
+}
+
+/*Class of content*/
+.content {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    top: 460px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.content h2 {
+    margin: 10px auto;
+    text-shadow: none;
+    color: darkslategrey;
+}
+
+.content .section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box {
+    width: 300px;
+    background-color:rgb(241, 243, 245);
 
 }
 
-.twitter {
-	color: #1DA1F2;
+.latest-article h2 {
+    margin-bottom: 50px;
 }
 
-footer {
-	background-color: black;
-	height: 5vh;
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.box h5 span {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: rgb(147, 161, 176);
+}
+
+.box h5 {
+    text-transform: none;
+    font-weight: normal;
+    color: black;
+}
+
+.box img {
+    width: 100%;
+    height: 320px;
+}
+
+.section a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.section div.nav-arrow {
+    text-align: center;
+    line-height: 420px;
+    font-size: 40px;
+    padding: 0;
+    color: black;
+}
+
+@media screen and (max-width: 855px) {
+    .header-left img {
+        width: 170px;
+    }
+
+    .header-right a {
+        font-size: 10px;
+        width: 100px
+    }
+
+    .top-container h1,h2 {
+        margin-right: 50px;
+    }
+
+    .top-container h1 {
+        font-size: 35px;
+    }
+
+    .top-container h2 {
+        font-size: 25px
+    } 
+}
+
+@media screen and (max-width: 630px) {
+    .header-left img {
+        width: 170px;
+    }
+
+    .header {
+        flex-direction: row;
+    }
+    .top-container {
+        min-height: 400px;
+    }
+    .header-right {
+        display: none;
+        padding: 0;
+    }
+
+    .header-right-menu {
+        display: block;
+    }
+
+    .header-right-show {
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: rgba(34, 49, 52, 1);
+        text-align: left;
+    }
+
+    .header-right-show a {
+        display: inline-block;
+        padding: 13px;
+        color: white;
+        font-size: 13px;
+    }
+    
+    .top-container h1,h2 {
+        margin-right: 50px;
+    }
+
+    .top-container h1 {
+        font-size: 35px;
+    }
+
+    .top-container h2 {
+        font-size: 25px
+    }   
+
+    .header-right a {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .top-container {
+        min-height: 360px;
+    }
+
+    .top-container h1,h2{
+        margin-right: 40px
+    }
+
+    .top-container h1 {
+        font-size: 27px;
+    }
+
+    .top-container h2 {
+        font-size: 20px
+    }
+    
+    .header-right a {
+        padding: 10px;
+        font-size: 15px;
+    }
 }
