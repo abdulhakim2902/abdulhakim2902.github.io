@@ -1,4 +1,6 @@
 html, body, ul {
+
+    font-family: 'Roboto', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -13,23 +15,32 @@ header {
 }
 
 header h1 {
-    margin: 0 0 80px 0;
+    margin: 0;
     padding: 20px;
     color: white;
-    text-align: center; 
+    text-align: center;
+}
+
+.container {    
+    background-image: url('/img/forest.jpg');
+    background-size: cover;
+    height: 92vh;
 }
 
 table {
     margin: 0 auto;
-    border: 1px solid black;
     border-radius: 30px;
 }
 
 td {
-    padding: 20px;
+    padding: 15px;
 }
 
-table img {
+.computer-pokemon {
+    margin: 0 auto;
+}
+
+.player-pokemon img, .computer-pokemon img {
     width: 80px;
     border: 1px solid black;
     border-radius: 20px;
@@ -38,7 +49,9 @@ table img {
     box-shadow: 0 5px #999;
     
 }
-
+.versus {
+    width: 80px;
+}
 .player-pokemon img:hover { 
     cursor: pointer;
 }
@@ -53,23 +66,40 @@ table p {
     text-align: center;
 }
 
-button {
-    width: 80px;
-    padding: 5px;
-    font-weight: bold;
-    margin: 0;
+.button {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
 }
 
-button:hover {
+.button:hover {
     cursor: pointer;
 }
 
+.button:active {
+    transform: scale(0.95);
+}
+
 .name {
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: wheat;
 }
 
 .player-score, .computer-score {
     font-size: 20px;
+    text-align: center;
+    font-family: 'Righteous', cursive;
+    color: whitesmoke;
+}
+
+.info {
+    border: 1px solid rgb(240, 209, 209);
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    color: rgb(43, 43, 43);
 }
 

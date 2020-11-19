@@ -3,42 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Pokemon Game</title>
+    <link rel="icon" href="/img/pokeball.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>    
     <header>
-        <h1>Pokemon Battle</h1>
+        <h1>Pokemon Game </h1>
     </header>
+    <div class="container">
+        <div style="height: 120px;"></div>
+        <table>
+            <tr style="margin-top: 150px;">
+                <td></td>
+                <td class="computer-pokemon">
+                    <img class="computer-img" src="/img/pokeball.png" alt="">
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="name">PLAYER</p>
+                    <p class="player-score">0</p>
+                </td>
+                <td>
+                    <p class="name"><img class="versus" src="/img/versus.png" alt="versus"></p>
+                </td>
+                <td>
+                    <p class="name">COMPUTER</p>
+                    <p class="computer-score">0</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="player-pokemon"><img class="bulbasaur" src="/img/bulbasaur.png" alt="bulbasaur"></td>
+                <td class="player-pokemon"><img class="charmander" src="/img/charmander.png" alt="charmander"></td>
+                <td class="player-pokemon"><img class="squirtle" src="/img/squirtle.png" alt="squirtle"></td>
+            </tr>
+            <tr>
+                <td colspan="3"><p class="info">____</p></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img class="button" src="/img/pokeball-reset.png" alt=""></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
 
-    <table>
-        <tr>
-            <td></td>
-            <td class="computer-pokemon"><img class="computer-img" src="/img/pokeball.png" alt=""></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>
-                <p class="name">Player</p>
-                <p class="player-score">0</p>
-            </td>
-            <td><p>:</p></td>
-            <td>
-                <p class="name">Computer</p>
-                <p class="computer-score">0</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="player-pokemon"><img class="bulbasaur" src="/img/bulbasaur.png" alt="bulbasaur"></td>
-            <td class="player-pokemon"><img class="charmander" src="/img/charmander.png" alt="charmander"></td>
-            <td class="player-pokemon"><img class="squirtle" src="/img/squirtle.png" alt="squirtle"></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td><button>RESET</button></td>
-            <td></td>
-        </tr>
-    </table>
 
     <audio id="myAudio" autoplay>
         <source src="/media/pkemon.mp3" type="audio/mpeg">

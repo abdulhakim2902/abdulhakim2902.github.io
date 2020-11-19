@@ -23,12 +23,18 @@ document.querySelectorAll('.player-pokemon img').forEach(playerPokemon => {
         const score = result(playerPokemon.className, pComputer);
         document.querySelector('.computer-img').src = `/img/${pComputer}.png`
 
+        const info = document.querySelector('.info');
+
         if (score === 1) {
             countScore.player += 3;
             countScore.computer -= 1;
+            info.innerHTML = 'You Win!';
         } else if (score === -1) {
             countScore.player -= 1;
             countScore.computer += 3;
+            info.innerHTML = 'You Lose!'
+        } else {
+            info.innerHTML = 'Draw!'
         }
 
         document.querySelector('.player-score').innerHTML = countScore.player;
@@ -36,10 +42,11 @@ document.querySelectorAll('.player-pokemon img').forEach(playerPokemon => {
     }
 })
 
-document.querySelector('button').onclick = () => {
+document.querySelector('.button').onclick = () => {
     countScore.player = 0;
     countScore.computer = 0;
     document.querySelector('.player-score').innerHTML = countScore.player;
     document.querySelector('.computer-score').innerHTML = countScore.computer;
-    document.querySelector('.computer-img').src = `/img/pokeball.png`
+    document.querySelector('.computer-img').src = `/img/pokeball.png`;
+    document.querySelector('.info').innerHTML = '____'
 }
