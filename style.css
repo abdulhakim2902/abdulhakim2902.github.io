@@ -1,0 +1,75 @@
+html, body, ul {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+header {
+    background-color: brown;
+}
+
+header h1 {
+    margin: 0 0 80px 0;
+    padding: 20px;
+    color: white;
+    text-align: center; 
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 30px;
+}
+
+td {
+    padding: 20px;
+}
+
+table img {
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: whitesmoke;
+    box-shadow: 0 5px #999;
+    
+}
+
+.player-pokemon img:hover { 
+    cursor: pointer;
+}
+
+.player-pokemon img:active {
+    background-color: #3e8e41;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+table p {
+    text-align: center;
+}
+
+button {
+    width: 80px;
+    padding: 5px;
+    font-weight: bold;
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.player-score, .computer-score {
+    font-size: 20px;
+}
+
