@@ -22,7 +22,7 @@ header h1 {
 }
 
 .container {    
-    background-image: url('/img/forest.jpg');
+    background-image: url('./img/forest.jpg');
     background-size: cover;
     height: 92vh;
 }
