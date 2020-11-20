@@ -1,3 +1,4 @@
+
 function randomPokemon() {
     let randomNumber = Math.random()
 
@@ -12,41 +13,76 @@ function result(player, computer) {
     return computer == 'squirtle' ? 1 : -1;   
 }
 
+// function shuffle() {
+//     let arr = [
+//         'bulbasaur',
+//         'charmander',
+//         'squirtle',
+//     ]
+
+//     let currentIndex = arr.length;
+
+//     while (currentIndex !== 0) {
+//         randomIndex = Math.floor(Math.random() * 3);
+//         currentIndex--;
+
+//         let tmpValue = arr[currentIndex];
+//         arr[currentIndex] = arr[randomIndex];
+//         arr[randomIndex] = tmpValue;
+//     }
+
+//     return arr
+// }
+
+// Array of pokemon player
+const pokePlayerImg = document.querySelectorAll('.player-pokemon img');
+const pokeCompImg = document.querySelector('.computer-pokemon img');
+const playerScore = document.querySelector('.player-score');
+const computerScore = document.querySelector('.computer-score')
+const info = document.querySelector('.info');
+
 const countScore = {
     player: 0,
-    computer: 0
+    computer: 0,
+    count: 10
 }
 
-document.querySelectorAll('.player-pokemon img').forEach(playerPokemon => {
-    playerPokemon.onclick = () => {
-        const pComputer = randomPokemon();
-        const score = result(playerPokemon.className, pComputer);
-        document.querySelector('.computer-img').src = `/img/${pComputer}.png`
+pokePlayerImg.forEach(img => {
+    img.addEventListener('click',() => {
+        const computerPokemon = randomPokemon();
+        // const playerPokemon = shufflePokemon[index];
+        const score = result(img.className, computerPokemon);
 
-        const info = document.querySelector('.info');
+        // img.src = `/img/${playerPokemon}.png`;
+        pokeCompImg.src = `/img/${computerPokemon}.png`
 
         if (score === 1) {
-            countScore.player += 3;
-            countScore.computer -= 1;
+            countScore.player++;
             info.innerHTML = 'You Win!';
         } else if (score === -1) {
-            countScore.player -= 1;
-            countScore.computer += 3;
+            countScore.computer++;
             info.innerHTML = 'You Lose!'
         } else {
             info.innerHTML = 'Draw!'
         }
 
-        document.querySelector('.player-score').innerHTML = countScore.player;
-        document.querySelector('.computer-score').innerHTML = countScore.computer;
-    }
+        playerScore.innerHTML = countScore.player;
+        computerScore.innerHTML = countScore.computer;
+
+        setTimeout(() => {
+            pokeCompImg.src = `/img/pokeball.png`;
+        }, 1200)
+    })
 })
 
 document.querySelector('.button').onclick = () => {
     countScore.player = 0;
     countScore.computer = 0;
-    document.querySelector('.player-score').innerHTML = countScore.player;
-    document.querySelector('.computer-score').innerHTML = countScore.computer;
-    document.querySelector('.computer-img').src = `/img/pokeball.png`;
+    countScore.count = 10;
+    playerScore.innerHTML = countScore.player;
+    computerScore.innerHTML = countScore.computer;
+    // pokePlayerImg.forEach(img => img.src = `/img/pokeball.png`)
     document.querySelector('.info').innerHTML = '____'
+    // shufflePokemon = shuffle();
 }
+

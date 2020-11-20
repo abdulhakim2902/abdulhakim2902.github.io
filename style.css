@@ -33,7 +33,7 @@ table {
 }
 
 td {
-    padding: 15px;
+    padding: 25px;
 }
 
 .computer-pokemon {
@@ -103,3 +103,31 @@ table p {
     color: rgb(43, 43, 43);
 }
 
+.rules td {
+    padding: 0px;
+}
+
+.rules tr {
+    margin: 0;
+}
+
+.rules img {
+    width: 30px;
+}
+
+.rules p {
+    display: inline-block;
+    text-align: left;
+    padding: 1px;
+    line-height: 19px;
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.919);
+}
+
+h3 {
+    margin: 10px;
+}
+
+td.rules {
+    padding: 10px;
+}

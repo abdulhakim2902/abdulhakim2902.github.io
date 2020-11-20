@@ -14,12 +14,12 @@
         <h1>Pokemon Game </h1>
     </header>
     <div class="container">
-        <div style="height: 120px;"></div>
+        <div style="height: 15px;"></div>
         <table>
             <tr style="margin-top: 150px;">
                 <td></td>
                 <td class="computer-pokemon">
-                    <img class="computer-img" src="/img/pokeball.png" alt="">
+                    <img src="/img/pokeball.png" alt="">
                 </td>
                 <td></td>
             </tr>
@@ -37,9 +37,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="player-pokemon"><img class="bulbasaur" src="/img/bulbasaur.png" alt="bulbasaur"></td>
-                <td class="player-pokemon"><img class="charmander" src="/img/charmander.png" alt="charmander"></td>
-                <td class="player-pokemon"><img class="squirtle" src="/img/squirtle.png" alt="squirtle"></td>
+                <td class="player-pokemon"><img class="bulbasaur" src="/img/bulbasaur.png"></td>
+                <td class="player-pokemon"><img class="charmander" src="/img/charmander.png"></td>
+                <td class="player-pokemon"><img class="squirtle" src="/img/squirtle.png"></td>
             </tr>
             <tr>
                 <td colspan="3"><p class="info">____</p></td>
@@ -49,11 +49,28 @@
                 <td><img class="button" src="/img/pokeball-reset.png" alt=""></td>
                 <td></td>
             </tr>
+            <td colspan="3" class="rules">
+                <table>
+                    <tr>
+                        <td><img src="/img/bulbasaur.png"></td>
+                        <td><p> is a <strong>LEAF</strong> pokemon and WEAK to <strong>FIRE</strong> pokemon</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/charmander.png"></td>
+                        <td><p> is a <strong>FIRE</strong> pokemon and WEAK to <strong>WATER</strong> pokemon</p></td>
+                    </tr>
+                    <tr>
+                        <td><img src="/img/squirtle.png"></td>
+                        <td><p> is a <strong>WATER</strong> pokemon and WEAK to <strong>LEAF</strong> pokemon</p></td>
+                    </tr>
+                </table>
+            </td>
         </table>
     </div>
 
 
-    <audio id="myAudio" autoplay>
+
+    <audio id="myAudio" autoplay loop>
         <source src="/media/pkemon.mp3" type="audio/mpeg">
     </audio>
 
