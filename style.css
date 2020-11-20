@@ -24,7 +24,8 @@ header h1 {
 .container {    
     background-image: url('./img/forest.jpg');
     background-size: cover;
-    height: 92vh;
+    background-repeat: repeat;
+    height: 110vh;
 }
 
 table {
